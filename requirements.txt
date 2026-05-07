@@ -12,6 +12,7 @@ fvcore>=0.1.5,<0.2
 tensorboard>=2.15,<3.0
 matplotlib>=3.8,<4.0
 tqdm>=4.66,<5.0
+PyYAML>=6.0,<7.0
 onnx>=1.15,<2.0
 onnxruntime>=1.17,<2.0
 pytest>=8.0,<10.0

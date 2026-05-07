@@ -1,0 +1,46 @@
+experiment:
+  name: cifar100_sdrb_resnet20_seed42
+
+seed: 42
+device: auto
+
+data:
+  dataset: cifar100
+  root: data
+  download: true
+  batch_size: 128
+  num_workers: 2
+
+model:
+  name: sdrb_resnet20
+  num_classes: 100
+  stage_dilations:
+    stage2: [1, 1, 2]
+    stage3: [1, 2, 3]
+    stage4: [1, 2, 5]
+
+gate:
+  temperature_start: 5.0
+  temperature_end: 0.5
+  entropy_weight: 0.01
+  metric_batches: 10
+  image_interval: 20
+
+train:
+  epochs: 200
+  log_interval: 50
+  eval_interval: 1
+
+optimizer:
+  name: sgd
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0005
+
+scheduler:
+  name: cosine
+  eta_min: 0.0
+
+output:
+  runs_dir: runs
+  checkpoint_dir: checkpoints
