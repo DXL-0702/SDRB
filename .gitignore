@@ -1,0 +1,36 @@
+# Local collaboration notes
+CLAUDE.md
+docs/decisions.md
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test and type-check cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Training outputs
+runs/
+checkpoints/
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# System files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/

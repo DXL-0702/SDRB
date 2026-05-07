@@ -1,0 +1,20 @@
+# SDRB M4 local prototype dependencies.
+#
+# These ranges are intentionally conservative because the current shell
+# environment does not contain the full SDRB dependency set yet.
+# After dependencies are installed in the actual project environment,
+# replace this file with exact pins generated from that environment.
+
+torch>=2.2,<3.0
+torchvision>=0.17,<1.0
+timm>=1.0,<2.0
+fvcore>=0.1.5,<0.2
+tensorboard>=2.15,<3.0
+matplotlib>=3.8,<4.0
+tqdm>=4.66,<5.0
+onnx>=1.15,<2.0
+onnxruntime>=1.17,<2.0
+pytest>=8.0,<10.0
+pytest-cov>=5.0,<8.0
+ruff>=0.6,<1.0
+mypy>=1.8,<2.0
